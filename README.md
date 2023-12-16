@@ -1,3 +1,3 @@
-# Doctor Appointment App - Flutter
+# Medi-Connect App - Flutter
 
 
