@@ -1,6 +1,6 @@
 # Medi-Connect App - Flutter Project Report 
 Submitted by: <br>
-Simarpreet Singh - 05214902021 <br>
+Simarpreet Singh - 05214902021 (Team Leader)<br>
 Himanshu Bhatt - 09714902021 <br>
 Kaustubh Mani - 08514902021 <br>
 Varun Kumar - 07314902021 <br>
