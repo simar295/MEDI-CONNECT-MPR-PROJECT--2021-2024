@@ -1,5 +1,7 @@
 import 'package:doctor_app/pages/doctor_page.dart';
 import 'package:doctor_app/pages/doctor_profile_page.dart';
+import 'package:doctor_app/pages/loginpage.dart';
+import 'package:doctor_app/pages/startup_page.dart';
 import 'package:doctor_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'pages/home.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: primary,
       ),
-      home: Home(),
+      home: startupPage(),
     );
   }
 }

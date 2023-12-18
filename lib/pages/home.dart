@@ -2,6 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:doctor_app/pages/account_page.dart';
 import 'package:doctor_app/pages/bookingpage.dart';
 import 'package:doctor_app/pages/chat_page.dart';
+import 'package:doctor_app/pages/loginpage.dart';
 import 'package:doctor_app/theme/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class _HomeState extends State<Home> {
     DoctorPage(),
     ChatPage(),
     bookingpage(),
-    AccountPage()
+    AccountPage(),
   ];
 
   int _currentIndex = 0;

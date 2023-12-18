@@ -22,9 +22,24 @@ _launchURLBrowser() async {
   }
 }
 
+Widget okButton = TextButton(
+  child: Text("OK"),
+  onPressed: () {},
+);
+
+AlertDialog alert = AlertDialog(
+  actions: [okButton],
+  title: Text("Report"),
+  content: Text("App wants to open Digilocker "),
+);
+
 class _AccountPageState extends State<AccountPage> {
   @override
   Widget build(BuildContext context) {
+    Widget okButton = TextButton(
+      child: Text("OK"),
+      onPressed: () {},
+    );
     return Scaffold(
       backgroundColor: appBgColor,
       appBar: AppBar(
@@ -160,6 +175,38 @@ class _AccountPageState extends State<AccountPage> {
                   ),
                   child: Text(
                     "         Access Medical Records",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                style: ButtonStyle(
+                    elevation: MaterialStatePropertyAll(0),
+                    backgroundColor: MaterialStatePropertyAll(appBgColor)),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return alert;
+                    },
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.all(20),
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 82, 143, 255),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Text(
+                    "    Access Insurance Certificates",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
